@@ -5,23 +5,47 @@ description: Prepare tailored job application materials including resumes, cover
 
 # job-application
 
-TODO: Skill instructions go here.
+## Directory Structure
 
-## Maintenance
-This skill can be updated by checking its original location:
+```
+job-application/
+  inputs/       # job posting file for the target role (copied from job-search/outputs/{company}-brief.md
+                # or pasted by user); references cv-data-gathering/outputs/ and job-search/outputs/
+  scratchpad/   # company research notes, leadership profiles, fit assessment per role
+  outputs/      # resume-{company}.md — tailored resume
+                # cover-letter-{company}.md — tailored cover letter
+```
 
-When updating, make sure to include all the associated metadata and also update the required skills. If the skill has been adapted / customized locally by the user, do your best at an intelligent merge, and indicate what you did.
+## Inputs
 
-Agent may need to adapt this skill to the user's environment. Local adaptations should be noted briefly in the local_adaptations section below.
+- Single job posting: if job-search was run, ask candidate which Tier 1 posting to focus on and copy the brief from `job-search/outputs/{company}-brief.md` into `job-application/inputs/`. Otherwise paste the raw JD.
+- Candidate background: read from `cv-data-gathering/outputs/catalog.md` and `sources.md`.
+- Before producing outputs, this skill requires the agent to complete company research (described below) and save it to `job-application/scratchpad/`.
 
-When installing or updating this skill, pay attention to the instructions in the setup section.
+## Outputs
+
+All outputs written to `job-application/outputs/`:
+- `resume-{company}.md` — tailored resume
+- `cover-letter-{company}.md` — tailored cover letter
+
+## Research on the Company
+
+Save research notes to `job-application/scratchpad/{company}-research.md` before drafting application materials.
+
+- Understand the company's mission, and financial dynamics
+- Understand who the decision makers are for this role
+- Identify, by name, several key personnel (use LinkedIn, and other social media)
+- Identify source statements from the leadership (both corporate and technical) to be able to tie to this candidate's info. Use social media, blogs, youtube (transcripts!), forum and community posts. Do deep dive on specific individuals, but focus on up to one year back
+- Prepare profiles, identifying each entity's values, motivations, and passions. Read between the lines - what is not said is often as important as what is emphasized.
+
+## Skill Maintenance
+
+Agent operations: 
+install(original_location, after: verify(setup?), this.local_adaptations? = adapt_local())
+update(recursive, from: original_location, when(this.version < original_location.version), after(adapt_local(this.local_adaptations?))) 
 
 original_location: https://github.com/pslusarz/skill-pincers/skills/job-application/
 
 version: 0.1.0
 
 required_skills: cv-data-gathering, job-search
-
-local_adaptations: none
-
-setup: none

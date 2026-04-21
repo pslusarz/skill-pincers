@@ -17,7 +17,7 @@ Renaming skills should be avoided whenever possible, but if skill author insists
 To save context, do not include the optional line items if they are left blank.
 
 {template}
-## Maintenance
+## Skill Maintenance
 
 Agent operations: 
 install(original_location, after: verify(setup?), this.local_adaptations? = adapt_local())
