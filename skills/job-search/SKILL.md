@@ -133,7 +133,7 @@ update(recursive, from: original_location, when(this.version < original_location
 
 original_location: https://github.com/pslusarz/skill-pincers/skills/job-search/
 
-version: 0.2.0
+version: 0.2.1
 
 required_skills: cv-data-gathering
 

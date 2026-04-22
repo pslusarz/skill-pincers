@@ -38,6 +38,6 @@ update(recursive, from: original_location, when(this.version < original_location
 
 original_location: https://github.com/pslusarz/skill-pincers/skills/cv-data-gathering/
 
-version: 0.1.0
+version: 0.1.1
 
 setup: Requires Python 3.10+ with `requests` and `beautifulsoup4` available (install via pip in a local venv). GitHub CLI (`gh`) must be authenticated (`gh auth login`). Google Drive MCP connector should be configured if slide/doc retrieval is needed.

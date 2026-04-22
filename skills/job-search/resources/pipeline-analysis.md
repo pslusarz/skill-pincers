@@ -74,13 +74,14 @@ What to avoid:
 
 For any listing, score 0-2 on each dimension. 7+ out of 10 = full application. 5-6 = lightweight application (tailored resume + short cover note). Below 5 = skip.
 
-| Dimension | 0 | 1 | 2 |
-|-----------|---|---|---|
+| Dimension | 0 | 1 | 2 | 3 |
+|-----------|---|---|---|---|
 | **Human Reader** | Large corp, faceless ATS | Mid-size, hiring manager name findable | <100 people, or founder/CTO named in listing |
 | **Problem-Shaped JD** | Pure tech stack checklist ("5+ yrs of X") | Mix of problems and requirements | Describes what they're building and why it's hard |
 | **No Auto Gauntlet** | Known HackerRank/Codility screen | Unknown screening process | Confirmed conversation-based or take-home process |
 | **Core Skill Relevance** | Generic overlap | Some alignment with candidate's key strengths | Role specifically needs what the candidate uniquely offers |
-| **Remote + Fresh** | Weekly in-office required or stale listing | Hybrid with periodic travel OK | Primarily remote (quarterly travel fine), posted <2 weeks ago |
+| ** Fresh** | posted over 2 weeks ago |  posted < 2 weeks ago | posted < week ago | posted today or yesterday |
+| **Remote** | Full time on-site | Weekly in-office required | Hybrid with periodic travel OK | Primarily remote (quarterly travel fine), or fullly remote |
 
 ---
 
